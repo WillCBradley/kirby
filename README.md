@@ -1,1 +1,1 @@
-https://willcbradley.github.io/kirby/
+http://synthesizerskool.com/
