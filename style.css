@@ -1,0 +1,249 @@
+/* Elements labelled alphabetically for convenience (except keyframes/media queries, which are at the bottom) */
+
+#button-div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+    height: 8.5vh;
+    background-color: #0477cc;
+    border: 2px solid #0477cc;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vw;
+    font-weight: 400;
+    transition: background-color .5s ease;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    animation-delay: 2s;
+}
+
+#button-div:hover {
+    background-color: white;
+    color: #0477cc;
+}
+
+#close {
+    position: absolute;
+    top: 2vh;
+    left: 2vh;
+    font-size: 26px;
+    color: grey;
+    opacity: 70;
+}
+
+#close:hover {
+    cursor: pointer;
+}
+
+html {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+
+.h1 {
+    font-weight: 700;
+  }
+
+#kirby-background {
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn .5s forwards;
+}
+
+#kirby-heading {
+    margin: 0;
+    font-size: 2.00416867vw;
+    color: #0477cc;
+    display: inline;
+    margin-left: 10px;
+    text-align: center;
+    vertical-align: center;
+}
+
+#kirby-icon {
+    margin: 0;
+    height: 10vh;
+    width: auto;
+}
+
+#middle-div {
+    width: 60vw;
+    height: 60vh;
+    border: 5px solid black;
+    border-radius: 15px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    position: fixed;
+    width: 90%;
+    height: 90%;
+    background-color: white;
+    z-index: 1;
+    display: none;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#modal-subheading {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 2vh;
+    margin-bottom: 5vh;
+}
+
+#qualifying-question {
+    text-align: center;
+    font-size: 4.580956961vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    font-weight: 700;
+    color: black;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+#roadmap {
+    text-align: center;
+    font-size: 4.580956961vw;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
+    font-weight: 700;
+    color: black; 
+}
+
+#subheading {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+    animation-delay: 1s;
+}
+
+#substack-form-medium {
+    display: none;
+}
+
+#substack-form-small {
+    display: none;
+}
+
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 1200px) {
+    #button-div {
+        font-size: 2.25vw;
+        width: 30vw;
+
+    }
+
+    #kirby-heading {
+        font-size: 2.25vw;
+    }
+
+    #middle-div {
+        width: 75vw;
+    }
+
+    #modal-subheading {
+        font-size: 3vw;
+    }
+
+
+    #qualifying-question {
+        font-size: 6.75vw;
+    }
+
+    #roadmap {
+        font-size: 6.75vw;
+    }
+
+    #subheading {
+        font-size: 3vw;
+    }
+
+    #substack-form-large {
+        display: none;
+    }
+
+    #substack-form-medium {
+        display: block;
+    }
+
+}
+
+@media (max-width: 760px) {
+    #button-div {
+        font-size: 3.75vw;
+        width: 45vw;
+
+    }
+
+    #kirby-heading {
+        font-size: 3.75vw;
+    }
+
+    #modal-subheading {
+        font-size: 5vw;
+    }
+
+    #middle-div {
+        width: 80vw;
+        height: 65vh;
+    }
+
+    #qualifying-question {
+        font-size: 11.25vw;
+    }
+
+    #roadmap {
+        font-size: 11.25vw;
+    }
+
+    #subheading {
+        font-size: 5vw;
+    }
+
+    #substack-form-large {
+        display: none;
+    }
+
+    #substack-form-medium {
+        display: none;
+    }
+
+    #substack-form-small {
+        display: block;
+    }
+
+}
